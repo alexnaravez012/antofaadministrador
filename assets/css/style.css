@@ -411,16 +411,17 @@
         padding-right: 25px;
     }
     
-    .apply-filters {
+    .apply-filters-administrator {
         border: 1px solid rgba(189, 189, 189, 0.712);
         background-color: white;
         border-radius: 5px;
         width: 140px;
         height: 20PX;
-        margin-bottom: 10px;
         padding-right: 5px;
         padding-left: 10px;
         cursor: pointer;
+        margin-left: 20px;
+        margin-bottom: 5px;
     }
     
     .input-apply-filters {
@@ -434,7 +435,7 @@
         font-size: 11px;
     }
     
-    .button-apply-filters {
+    .button-apply-filters-administrator {
         background-color: #f21636;
         border: none;
         border-radius: 5px;
@@ -442,27 +443,33 @@
         height: 20px;
         width: 155px;
         font-size: 10px;
-        margin-top: 20px;
         cursor: pointer;
+        margin-left: 30px;
+        margin-bottom: 10px;
     }
     
-    .card-specific-property {
+    .card-specific-property-administrator {
         border: 1px solid rgba(255, 0, 0, 0.466);
         border-left: none;
         height: 123px;
-        width: 500px;
+        width: 380px;
         padding: 0px;
         padding-left: 25px;
         padding-top: 5px;
     }
     
-    .star-favorites {
-        width: 18px;
+    .card-general-specific-property-administrator {
+        width: 635px;
+        margin-left: -5px;
+    }
+    
+    .ocultar {
+        width: 30px;
         margin-right: 10px;
         cursor: pointer;
     }
     
-    .star-favorites:focus {
+    .ocultar:focus {
         outline: 0;
     }
     
