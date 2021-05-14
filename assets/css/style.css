@@ -458,11 +458,6 @@
         padding-top: 5px;
     }
     
-    .card-general-specific-property-administrator {
-        width: 635px;
-        margin-left: -5px;
-    }
-    
     .ocultar {
         width: 30px;
         margin-right: 10px;
@@ -478,20 +473,22 @@
         padding-left: 30px;
     }
     
-    .button-grey-sector {
+    .button-grey-sector-administrator {
         background-color: #F2F2F2;
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 5px;
-        height: 20px;
+        height: 30px;
+        width: 100px;
     }
     
-    .icon-contact-size {
+    .icon-contact-size-administrator {
         width: 90px;
-        margin-right: 10px;
+        margin-left: 35px;
         border: 1px solid rgb(138, 138, 138);
         border-radius: 5px;
         cursor: pointer;
+        margin-top: 10px;
     }
     
     .modal-contact {
@@ -808,4 +805,16 @@
     
     .button-create-post:focus {
         outline: 0;
+    }
+    
+    .icon-edit-administrator {
+        margin-left: 30px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    
+    .icon-user-number-administrator {
+        margin-left: 28px;
+        margin-top: 5px;
+        cursor: pointer;
     }
