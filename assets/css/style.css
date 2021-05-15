@@ -803,6 +803,20 @@
         width: 230px;
     }
     
+    .button-delete-post {
+        background-color: #D1D1D1;
+        border: none;
+        height: 32px;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        margin-left: 20px;
+        cursor: pointer;
+        width: 230px;
+    }
+    
     .button-create-post:focus {
         outline: 0;
     }

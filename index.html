@@ -319,7 +319,7 @@
         </div>
     </div>
     <!-- vista de busqueda -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- Navbar -->
         <div class="uk-flex uk-flex-middle navbar">
             <div>
@@ -567,78 +567,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px; position: relative;">
-                            <img src="./assets/images/MOCKUP Antofa-43.jpg" style="position: relative;" alt="" uk-cover>
+                    <div class="uk-flex">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator" style="position: relative; z-index: 0;">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">Perdomo, Bogotá D.C.</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-2">
-                                        <img class="favorites-2 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-2 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-2">
+                                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$204.800.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">36</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">1</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">1</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">CONJUNTO RESIDENCIAL RESERVA DEL MAR</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-1">
-                                        <div id="modal-contact-1" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-43.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL RESERVA DEL MAR</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -647,78 +663,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-44.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">Perdomo, Bogotá D.C.</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-3">
-                                        <img class="favorites-3 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-3 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-3">
+                                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$178.000.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">60</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">BELLAVISTA 2</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-2">
-                                        <div id="modal-contact-2" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-44.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">BELLAVISTA 2</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -727,78 +759,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-45.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">La Calera</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-4">
-                                        <img class="favorites-4 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-4 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-4">
+                                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.030.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">57.81</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">3</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">LAUREL BOSQUES DE LA CALERA</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-3">
-                                        <div id="modal-contact-3" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-45.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">La Calera</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -807,78 +855,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-46.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">Nicolás de Federman</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-5">
-                                        <img class="favorites-5 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-5 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-5">
+                                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$169.788.940</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">37.51</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">1</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">LAUREL BOSQUES DE LA CALERA</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-4">
-                                        <div id="modal-contact-4" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-46.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Nicolás de Federman</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -887,78 +951,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-47.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">Las Cruces</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-6">
-                                        <img class="favorites-6 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-6 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-6">
+                                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$354.000.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">56</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">1</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">LAUREL BOSQUES DE LA CALERA</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-5">
-                                        <div id="modal-contact-5" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-47.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Las Cruces</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -967,78 +1047,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-48.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">El Contador</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-7">
-                                        <img class="favorites-7 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-7 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-7">
+                                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$754.000.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">111.18</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">3</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">3</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-6">
-                                        <div id="modal-contact-6" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-48.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">El Contador</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1047,78 +1143,94 @@
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card-general-specific-property-administrator" uk-grid>
+                    <div class="uk-flex">
                         <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
-                            <img src="./assets/images/MOCKUP Antofa-45.jpg" alt="" uk-cover>
+                            <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
                         <div>
-                            <div class="uk-card-body card-specific-property-administrator">
+                            <div class="card-specific-property-administrator">
                                 <div class="uk-flex uk-flex-middle uk-flex-between">
                                     <div class="uk-flex uk-flex-middle">
-                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-200">La Calera</h6>
+                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
                                     </div>
-                                    <div class="star-favorites" uk-toggle="target: .favorites-4">
-                                        <img class="favorites-4 star-favorites" src="./assets/icons/Favoritos-inactivo.png" alt="">
-                                        <img class="favorites-4 star-favorites" src="./assets/icons/Favoritos-activo.png" alt="" hidden>
+                                    <div>
+                                        <div class="star-favorites" uk-toggle="target: .ocultar-8">
+                                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
+                                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-middle padding-vertical-15">
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.030.000</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">57.81</h6>
-                                    </div>
-                                    <div>
-                                        <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">3</h6>
-                                    </div>
-                                    <div class="padding-horizontal-40">
-                                        <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
-                                        <h6 class="uk-margin-remove  font-weight-500 uk-text-center font-size-13">2</h6>
-                                    </div>
-                                </div>
-                                <div class="uk-flex uk-flex-middle uk-flex-between">
-                                    <div>
-                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector uk-flex uk-flex-middle">LAUREL BOSQUES DE LA CALERA</h6>
-                                    </div>
-                                    <div>
-                                        <img class="icon-contact-size" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact-3">
-                                        <div id="modal-contact-3" uk-modal>
-                                            <div class="uk-modal-dialog uk-modal-body modal-contact">
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-45.jpg" alt="">
-                                                    <div style="margin-top: 25px;">
-                                                        <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">La Calera</h6>
-                                                        <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">LAUREL BOSQUES DE LA CALERA</h6>
-                                                    </div>
+                                <div class="uk-flex uk-flex-midlle">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Precio de venta</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">$150.200.000</h6>
                                                 </div>
-                                                <div class="padding-vertical-3">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
-                                                </div>
-                                                <div class="padding-vertical-5">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                                    <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
-                                                </div>
-                                                <div style="margin-top: 20px;">
-                                                    <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                                    <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
-                                                </div>
-                                                <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                                                <div class="uk-flex uk-flex-center">
-                                                    <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Area (m2)</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">44.5</h6>
                                                 </div>
                                             </div>
+                                            <div class="uk-flex uk-flex-middle" style="margin-top: 8px;">
+                                                <div class="width-100">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Habitaciones</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">2</h6>
+                                                </div>
+                                                <div class="width-70">
+                                                    <h6 class="uk-margin-remove color-red font-size-10">Baños</h6>
+                                                    <h6 class="uk-margin-remove  font-weight-500 font-size-13">1</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="margin-left: 13px;">
+                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-administrator uk-flex uk-flex-middle uk-text-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                            </div>
+                                            <div>
+                                                <img class="icon-contact-size-administrator" src="./assets/icons/Boton-de-contacto.png" alt="" uk-toggle="target: #modal-contact">
+                                                <div id="modal-contact" uk-modal>
+                                                    <div class="uk-modal-dialog uk-modal-body modal-contact">
+                                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <img class="size-image-contact" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
+                                                            <div style="margin-top: 25px;">
+                                                                <h6 class="uk-margin-remove color-red uk-text-bold font-size-16" style="padding-bottom: 5px;">Perdomo, Bogotá D.C.</h6>
+                                                                <h6 class="uk-margin-remove font-size-8 color-grey uk-text-bold button-grey-sector-contact uk-flex uk-flex-middle uk-flex-center">CONJUNTO RESIDENCIAL BELLAVISTA 2</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="padding-vertical-3">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Nombre y Apellido">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Número de teléfono">
+                                                        </div>
+                                                        <div class="padding-vertical-5">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
+                                                            <input class="input-modal-contact-us" type="text" placeholder="Correo electrónico">
+                                                        </div>
+                                                        <div style="margin-top: 20px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
+                                                            <input class="input-modal-contact-us-information" type="text" placeholder="Estoy interesado en ampliar la información de este predio.....">
+                                                        </div>
+                                                        <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
+                                                        <div class="uk-flex uk-flex-center">
+                                                            <button class="button-send-modal-contact-us uk-text-bold">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <img class="icon-edit-administrator" src="./assets/icons/editar.png" style="width: 25px;" alt="">
+                                            <img class="icon-user-number-administrator" src="./assets/icons/usuarios.png" style="width: 25px;" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1128,7 +1240,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-flex uk-flex-center" style="margin-left: 120px; margin-top: 30px;">
+        <div class="uk-flex uk-flex-center" style="margin-top: 30px;">
             <div class="uk-flex uk-flex-middle">
                 <img class="icons-pagination-size" src="./assets/icons/21.png" alt="">
                 <img class="icons-pagination-size" src="./assets/icons/22.png" alt="" style="width: 15px; margin-right: 30px;">
@@ -1146,349 +1258,71 @@
         </div>
     </div>
     <!-- Vista especifica -->
-    <div style="display: none;">
-        <div class="uk-flex" style="padding-top: 90px; margin-left: 30px;">
+    <div style="display: inline;">
+        <!-- Navbar -->
+        <div class="uk-flex uk-flex-middle navbar">
             <div>
-                <h5 class="uk-margin-remove uk-text-bold color-red">Perdomo, Bogotá D.C.</h5>
-                <h6 class="uk-margin-remove uk-text-bold">Las Cruces</h6>
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-                    <ul class="uk-slideshow-items">
-                        <li>
-                            <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-43.jpg" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-44.jpg" alt="" uk-cover>
-                        </li>
-                    </ul>
-                    <img class="uk-position-center-left uk-position-small uk-hidden-hover icons-slideshow-size" href="#" uk-slideshow-item="previous" src="./assets/icons/4.png" alt="">
-                    <img class="uk-position-center-right uk-position-small uk-hidden-hover icons-slideshow-size" href="#" uk-slideshow-item="next" src="./assets/icons/5.png" alt="">
-                </div>
-                <div class="box-apartment-characteristics">
-                    <h6 class="uk-margin-remove font-size-11 uk-text-bold color-grey">27.39 m2 - 46.06 m2</h6>
-                    <h6 class="uk-margin-remove font-size-10 uk-text-muted">Área construida</h6>
-                </div>
-                <div class="box-apartment-characteristics">
-                    <div class="uk-flex uk-flex-middle">
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Área privada:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">80,00 m2</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Área Const:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">80,00 m2</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Precio m2:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">15.000/m2</h6>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-middle padding-vertical-5">
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Admón:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">$379,000</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Estrato:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">6</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Estado:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">Excelente</h6>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Antigüedad:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">9 a 15 años</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Piso No:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">12º</h6>
-                        </div>
-                        <div>
-                            <h6 class="uk-margin-remove font-size-11 uk-text-bold width-100 color-grey">Sector:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted width-100">Oriente</h6>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top: 20px; margin-bottom: 30px;">
-                    <div class="uk-flex uk-flex-middle uk-flex-between cursor-pointer focus-none" uk-toggle="target: #toggle-interior">
-                        <div class="uk-flex uk-flex-bottom">
-                            <img class="icon-apartment-characteristics" src="./assets/icons/9.png" alt="">
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Interior</h6>
-                        </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
-                    </div>
-                    <div class="uk-flex uk-flex-middle" id="toggle-interior" style="margin-top: 10px;" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Apto para niños</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle" style="margin-left: 73px;">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Citófonos</h6>
-                        </div>
-                    </div>
-                    <div class="hr-tab"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between cursor-pointer focus-none" style="margin-top: 5px;" uk-toggle="target: #toggle-exterior">
-                        <div class="uk-flex uk-flex-bottom">
-                            <img class="icon-apartment-characteristics" src="./assets/icons/10.png" alt="">
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Exteriores</h6>
-                        </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
-                    </div>
-                    <div id="toggle-exterior" style="margin-top: 10px; padding-bottom: 10px;" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Ascensor</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 111px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Acceso para discapacitados</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-10">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Conjunto Cerrado</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 62px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Circuito cerrado de TV</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Parqueadero visitantes</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 62px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-70">Vigilancia 24 hrs</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hr-tab"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between cursor-pointer focus-none" style="margin-top: 5px;" uk-toggle="target: #toggle-zonas">
-                        <div class="uk-flex uk-flex-bottom">
-                            <img class="icon-apartment-characteristics" src="./assets/icons/11.png" alt="">
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Zonas comunes</h6>
-                        </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
-                    </div>
-                    <div id="toggle-zonas" style="margin-top: 10px; padding-bottom: 10px;" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Gimnasio</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 110px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Salón comunal</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-10">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Zona de BBQ</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 90px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Zona para niños</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Zonas Verdes</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hr-tab"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between cursor-pointer focus-none" style="margin-top: 5px;" uk-toggle="target: #toggle-sector">
-                        <div class="uk-flex uk-flex-bottom">
-                            <img class="icon-apartment-characteristics" src="./assets/icons/12.png" alt="">
-                            <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Sector</h6>
-                        </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
-                    </div>
-                    <div id="toggle-sector" style="margin-top: 15px; padding-bottom: 10px;" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Cerca de centros comerciales</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 60px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Cerca a colegios y universidades</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-10">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Cerca a parques</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 70px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-100">Cerca a supermercados</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-150">Cerca al transporte público</h6>
-                            </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-left: 8px;">
-                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 width-70">Sobre vía principal</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hr-tab"></div>
-                </div>
+                <img class="size-logo-antofa cursor-pointer" src="./assets/icons/MOCKUP-Antofa.png" alt="">
+            </div>
+            <div style="margin-left: 250px;">
+                <h6 class="uk-margin-remove uk-text-bold uk-text-muted cursor-pointer">Regresar</h6>
             </div>
             <div>
-                <div class="uk-flex">
-                    <div style="margin-left: 15px;">
-                        <h6 class="uk-margin-remove font-size-12" style="padding-top: 6px;">Desde</h6>
-                        <h6 class="uk-margin-remove uk-text-bold">$124.848.646</h6>
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-                            <ul class="uk-slideshow-items">
-                                <li>
-                                    <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-45.jpg" alt="" uk-cover>
-                                </li>
-                                <li>
-                                    <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-46.jpg" alt="" uk-cover>
-                                </li>
-                                <li>
-                                    <img class="image-specific-views" src="./assets/images/MOCKUP Antofa-47.jpg" alt="" uk-cover>
-                                </li>
-                            </ul>
-                            <img class="uk-position-center-left uk-position-small uk-hidden-hover icons-slideshow-size" href="#" uk-slideshow-item="previous" src="./assets/icons/4.png" alt="">
-                            <img class="uk-position-center-right uk-position-small uk-hidden-hover icons-slideshow-size" href="#" uk-slideshow-item="next" src="./assets/icons/5.png" alt="">
+                <button class="button-create-post">Guardar Cambios</button>
+            </div>
+            <div>
+                <button class="button-delete-post">Eliminar Publicación</button>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-position-right" style="padding-right: 40px;">
+                <h6 class="uk-margin-remove uk-text-muted button-registration-user">Registrate</h6>
+                <div class="drop-user-registration" uk-dropdown="offset: 26">
+                    <div style="padding: 15px; padding-right: 18px;">
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-bottom: 5px;">Usuario</h6>
+                            <input class="input-dates-registration-user" type="text">
                         </div>
-                        <div class="box-apartment-description uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle">
-                                <img class="size-icons-bed" src="./assets/icons/6.png" alt="">
-                                <div>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 line-height-4">2</h6>
-                                    <h6 class="uk-margin-remove uk-text-muted font-size-9">Habitaciones</h6>
-                                </div>
-                            </div>
-                            <div class="hr-tab-vertical"></div>
-                            <div class="uk-flex uk-flex-middle">
-                                <img class="size-icons-bath" src="./assets/icons/7.png" alt="">
-                                <div>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 line-height-4">1</h6>
-                                    <h6 class="uk-margin-remove uk-text-muted font-size-9">Baños</h6>
-                                </div>
-                            </div>
-                            <div class="hr-tab-vertical"></div>
-                            <div class="uk-flex uk-flex-middle" style="margin-right: 10px;">
-                                <img class="size-icons-parking" src="./assets/icons/8.png" alt="">
-                                <div>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 line-height-4">1</h6>
-                                    <h6 class="uk-margin-remove uk-text-muted font-size-9">Parqueadero</h6>
-                                </div>
-                            </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-top: 10px; padding-bottom: 5px;">E-mail</h6>
+                            <input class="input-dates-registration-user" type="text">
                         </div>
-                        <div style="margin-top: 5px;">
-                            <div class="uk-flex uk-flex-middle uk-flex-between">
-                                <h6 class="uk-margin-remove font-size-11 color-red uk-text-bold">Descripción:</h6>
-                                <h6 class="uk-margin-remove font-size-11 color-red uk-text-bold">Código: 5910946</h6>
-                            </div>
-                            <div class="width-312">
-                                <h6 class="uk-margin-remove uk-text-justify line-height-4 font-size-11 uk-text-bold uk-text-muted padding-vertical-5">Se arrieda excelente apartamento en Las cruces, sobre la Carrera xx Piso 12. Sala, comedor, balcón, cocina integral, zona de lavandería, tres alcobas (las principal con baño privado), baño social, estudio o estar TV y parqueadero
-                                    cubierto. Vigilancia privada. Área social con salón de eventos, gimnasio, jacuzzi, etc. Los datos e imágenes suministrados, están sujetos a verificación por lo tanto los interesados deben comunicarse con la inmobiliaria
-                                    Antofa.
-                                </h6>
-                            </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-top: 10px; padding-bottom: 5px;">Contraseña</h6>
+                            <input class="input-dates-registration-user" type="text">
                         </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-top: 10px; padding-bottom: 5px;">Confirmar contraseña</h6>
+                            <input class="input-dates-registration-user" type="text">
+                        </div>
+                        <h6 class="uk-margin-remove font-size-9 cursor-pointer uk-text-right uk-text-muted">¿Olvidaste tu contraseña?</h6>
                     </div>
-                    <div style="margin-top: 20px; margin-left: 15px;">
-                        <h6 class="uk-margin-remove uk-text-bold">¡Estoy interesado!</h6>
-                        <div class="box-interested">
-                            <div class="padding-vertical-5">
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Nombre</h6>
-                                <input class="input-interested" type="text" placeholder="Nombre y Apellido">
-                            </div>
-                            <div class="padding-vertical-5">
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">*Telefono</h6>
-                                <input class="input-interested" type="text" placeholder="Número de teléfono">
-                            </div>
-                            <div class="padding-vertical-5">
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">E-mail</h6>
-                                <input class="input-interested" type="text" placeholder="Correo electrónico">
-                            </div>
-                            <div class="padding-vertical-5">
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10 color-red">Escriba aquí información adicional si desea</h6>
-                                <textarea class="input-interested-information" placeholder="Estoy interesado en ampliar&#10;la información de este predio....."></textarea>
-                            </div>
-                            <h6 class="uk-margin-remove font-size-8 uk-text-center color-grey padding-vertical-3">Enviar su contacto acepta los <span class="color-red cursor-pointer">términos y condiciones</span> y el <span class="color-red cursor-pointer">aviso de privacidad</span></h6>
-                            <div class="uk-flex uk-flex-center">
-                                <button class="button-send-interested uk-text-bold">ENVIAR</button>
-                            </div>
-                            <div class="uk-flex uk-flex-center">
-                                <img class="icon-whatsapp" src="./assets/icons/3.png" alt="">
-                            </div>
-                        </div>
+                    <div>
+                        <button class="button-dates-users-registration uk-position-bottom">Buscar</button>
                     </div>
                 </div>
-                <div class="box-seller-question">
-                    <h6 class="uk-margin-remove font-size-12 font-weight-500 color-grey">Pregúntale al vendedor por el inmueble</h6>
-                    <input class="input-box-seller-question" type="text" placeholder="Escribe aquí tus inquietudes al anunciante">
-                    <div class="uk-text-right">
-                        <button class="button-send-interested uk-text-bold" style="margin-right: -18px;">ENVIAR</button>
+                <img class="size-icon-user" src="./assets/icons/17.png" alt="">
+                <h6 class="uk-margin-remove font-size-13 uk-text-muted cursor-pointer button-registration-user">Ingresa</h6>
+                <div class="drop-user-registration" uk-dropdown="offset: 26" style=" height: 200px !important;">
+                    <div style="padding: 15px; padding-right: 18px;">
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-bottom: 5px;">Usuario</h6>
+                            <input class="input-dates-registration-user" type="text">
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold color-red" style="padding-top: 10px; padding-bottom: 5px;">Contraseña</h6>
+                            <input class="input-dates-registration-user" type="text">
+                        </div>
+                        <h6 class="uk-margin-remove font-size-9 cursor-pointer uk-text-right uk-text-muted">¿Olvidaste tu contraseña?</h6>
+                    </div>
+                    <div>
+                        <button class="button-dates-users-registration uk-position-bottom">Buscar</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="padding-top: 85px;">
             <div>
-                <div class="uk-text-right" style="margin-top: 20px;">
-                    <h6 class="uk-margin-remove uk-text-bold">Ubicación del inmueble</h6>
-                </div>
-                <div style="margin-left: 15px; margin-top: 8px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280650613!2d-74.24789655790045!3d4.64862594373708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1620502950794!5m2!1ses!2sco"
-                        width="450" height="242" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <h6 class="uk-margin-remove font-size-6-5 uk-text-center padding-vertical-3">antofapropiedades.com no se hace responsable de los errores en la información mostrada, el uso de dica información es responsabilidad del usuario</h6>
-                    <div class="uk-text-right padding-vertical-5">
-                        <h6 class="uk-margin-remove uk-text-bold font-size-13">Las Cruces - Carrera xx Nº xx - xx</h6>
-                        <h6 class="uk-margin-remove font-size-11">Conjunto Residencial Bellavista</h6>
-                    </div>
-                </div>
-                <div class="box-record-tools">
-                    <h6 class="uk-margin-remove font-size-11 uk-text-bold">Historial</h6>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-flex uk-flex-middle">
-                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Actualizado:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted padding-horizontal-5">04/04</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle padding-horizontal-50">
-                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Visitas:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted padding-horizontal-5">2348</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle">
-                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Código Fincaraiz:</h6>
-                            <h6 class="uk-margin-remove font-size-10 uk-text-muted padding-horizontal-5">5910946</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-record-tools" style="margin-top: 7px;">
-                    <h6 class="uk-margin-remove font-size-11 uk-text-bold">Herramientas</h6>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-flex uk-flex-middle">
-                            <img class="icon-print" src="./assets/icons/13.png" alt="">
-                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Imprimir</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle">
-                            <img class="icon-report" src="./assets/icons/14.png" alt="">
-                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Reportar Error</h6>
-                        </div>
-                    </div>
-                </div>
+                <input type="text" placeholder="Zona, Ciudad">
+                <input type="text" placeholder="Barrio">
             </div>
         </div>
     </div>
