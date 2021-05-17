@@ -832,3 +832,50 @@
         margin-top: 5px;
         cursor: pointer;
     }
+    
+    .box-add-new-image {
+        width: 300px;
+        height: 180px;
+        border: 1px solid rgba(182, 182, 182, 0.445);
+        padding: 0px;
+    }
+    
+    .box-bottom-new-image {
+        width: 300px;
+        height: 60px;
+        border: 1px solid rgba(182, 182, 182, 0.247);
+        padding: 0px;
+        margin-top: 10px;
+        padding-top: 12px !important;
+    }
+    
+    .input-build-area {
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 293px;
+        font-size: 11px;
+    }
+    
+    .input-build-area::placeholder {
+        color: rgba(128, 128, 128, 0.774);
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    
+    .icon-plus-size {
+        width: 80px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .inputs-areas {
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 70px;
+        font-size: 11px;
+    }
+    
+    .inputs-areas::placeholder {
+        color: rgba(128, 128, 128, 0.774);
+        font-weight: 500;
+    }
