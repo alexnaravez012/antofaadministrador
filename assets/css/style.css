@@ -1039,3 +1039,35 @@
     .number-box-edit-post:focus {
         outline: 0;
     }
+    
+    .icon-preview-boxedit-post {
+        position: absolute;
+        left: 8px;
+        top: 85px;
+        width: 15px;
+        cursor: pointer;
+    }
+    
+    .icon-next-boxedit-post {
+        position: absolute;
+        right: 8px;
+        top: 85px;
+        width: 15px;
+        cursor: pointer;
+    }
+    
+    .image-interested-customer {
+        width: 250px;
+    }
+    
+    .color-grey-opac {
+        color: rgba(128, 128, 128, 0.507);
+    }
+    
+    .width-600 {
+        width: 600px;
+    }
+    
+    .line-height-11 {
+        line-height: 11px;
+    }
