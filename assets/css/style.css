@@ -617,11 +617,12 @@
         margin-left: 15px;
     }
     
-    .box-apartment-description {
+    .box-apartment-description-inputs {
         border: 1px solid rgba(128, 128, 128, 0.493);
         padding: 10px;
-        width: 290px;
-        margin-top: 10px;
+        width: 278px;
+        height: 45px;
+        margin-left: 23px;
     }
     
     .box-interested {
@@ -965,4 +966,27 @@
     
     .inputs-district:focus {
         outline: 0;
+    }
+    
+    .box-add-description {
+        width: 623px;
+        margin-left: 35px;
+    }
+    
+    .input-large-description {
+        margin-left: 35px;
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 623px;
+        height: 50px;
+    }
+    
+    .input-large-description:focus {
+        outline: 0;
+    }
+    
+    .hr-tab-red {
+        border: 1px solid rgba(255, 0, 0, 0.486);
+        width: 100%;
+        margin-top: 30px;
     }
