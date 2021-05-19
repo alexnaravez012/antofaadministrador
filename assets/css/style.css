@@ -986,7 +986,56 @@
     }
     
     .hr-tab-red {
-        border: 1px solid rgba(255, 0, 0, 0.486);
+        height: 1px;
         width: 100%;
-        margin-top: 30px;
+        background-color: rgba(255, 0, 0, 0.637);
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .height-160 {
+        height: 160px;
+    }
+    
+    .drop-user-registration {
+        width: 200px !important;
+        left: -20px !important;
+        padding: 0px !important;
+        height: 320px !important;
+    }
+    
+    .images-box-edit-post {
+        width: 300px;
+        height: 180px;
+    }
+    
+    .button-close-box-edit-post {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-color: rgba(255, 255, 255, 0) !important;
+        color: red;
+        border: none;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .button-close-box-edit-post:focus {
+        outline: 0;
+    }
+    
+    .number-box-edit-post {
+        position: absolute;
+        background-color: white;
+        color: red;
+        font-size: 15px;
+        left: 5px;
+        top: 5px;
+        border: none;
+        font-weight: 700;
+    }
+    
+    .number-box-edit-post:focus {
+        outline: 0;
     }
