@@ -319,7 +319,7 @@
         </div>
     </div>
     <!-- Administración de publicaciones -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!-- Navbar -->
         <div class="uk-flex uk-flex-middle navbar">
             <div>
@@ -370,18 +370,20 @@
                     </div>
                 </div>
                 <div style="margin-left: 20px;">
-                    <div class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none" uk-toggle="target: #toggle-antiguedad">
-                        <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Antiguedad</h6>
-                        <i class="fas fa-plus font-size-12 color-red"></i>
-                    </div>
-                    <div id="toggle-antiguedad" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">1 a 10 años</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
-                            <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">10 a 20 años</h6>
+                    <div class="uk-inline">
+                        <button class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none">
+                            <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Antiguedad</h6>
+                            <i class="fas fa-plus font-size-12 color-red"></i>
+                        </button>
+                        <div uk-drop="mode: click">
+                            <div class="uk-flex uk-flex-middle">
+                                <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">1 a 10 años</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
+                                <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">10 a 20 años</h6>
+                            </div>
                         </div>
                     </div>
                     <div class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none" uk-toggle="target: #toggle-estrato">
@@ -470,9 +472,16 @@
                 </div>
             </div>
             <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2" style="margin-left: 15px; margin-top: 5px;" uk-grid>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-1">
+                        <div uk-toggle="target: #container-opacity-1; cls: uk-display-none">
+                            <img class="ocultar-1 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-1 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-1" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -482,12 +491,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-1">
-                                            <img class="ocultar-1 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-1 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -566,9 +569,17 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-2">
+                        <div uk-toggle="target: #container-opacity-2; cls: uk-display-none">
+                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-2" class="box-opacity uk-display-none">
+                    </div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -578,12 +589,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-2">
-                                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-2 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -662,9 +667,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-3">
+                        <div uk-toggle="target: #container-opacity-3; cls: uk-display-none">
+                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-3" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -674,12 +686,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-3">
-                                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-3 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -758,9 +764,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-4">
+                        <div uk-toggle="target: #container-opacity-4; cls: uk-display-none">
+                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-4" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -770,12 +783,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-4">
-                                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-4 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -854,9 +861,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-5">
+                        <div uk-toggle="target: #container-opacity-5; cls: uk-display-none">
+                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-5" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -866,12 +880,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-5">
-                                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-5 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -950,9 +958,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-6">
+                        <div uk-toggle="target: #container-opacity-6; cls: uk-display-none">
+                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-6" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -962,12 +977,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-6">
-                                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-6 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -1046,9 +1055,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-7">
+                        <div uk-toggle="target: #container-opacity-7; cls: uk-display-none">
+                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-7" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -1058,12 +1074,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-7">
-                                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-7 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -1142,9 +1152,16 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div class="uk-position-relative" style="margin-top: 20px;">
+                    <div class="star-favorites uk-position-absolute" style="z-index: 900 !important; right: 17px; top: 5px" uk-toggle="target: .ocultar-8">
+                        <div uk-toggle="target: #container-opacity-8; cls: uk-display-none">
+                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-activo.png" alt="" hidden>
+                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container-opacity-8" class="box-opacity uk-display-none"></div>
                     <div class="uk-flex">
-                        <div class="uk-card-media-left uk-cover-container" style="height: 130px; width: 230px;">
+                        <div class="uk-card-media-left uk-cover-container" style="height: 137px; width: 230px;">
                             <img src="./assets/images/MOCKUP Antofa-42.jpg" alt="" uk-cover>
                             <canvas width="10" height="20"></canvas>
                         </div>
@@ -1154,12 +1171,6 @@
                                     <div class="uk-flex uk-flex-middle">
                                         <h6 class="uk-margin-remove color-red uk-text-bold font-size-15 width-190">Perdomo, Bogotá D.C.</h6>
                                         <h6 class="uk-margin-remove uk-text-muted font-size-9">Apartamento nuevo en venta</h6>
-                                    </div>
-                                    <div>
-                                        <div class="star-favorites" uk-toggle="target: .ocultar-8">
-                                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-activo.png" alt="">
-                                            <img class="ocultar-8 ocultar" src="./assets/icons/ocultar-inactivo.png" alt="" hidden>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-midlle">
@@ -1322,7 +1333,7 @@
         <div style="padding-top: 85px;">
             <div class="uk-flex uk-flex-column" style="margin-bottom: 12px; margin-top: 10px;">
                 <input class="inputs-city font-size-16 uk-text-bold" type="text" placeholder="Zona, Ciudad">
-                <input class="inputs-district uk-text-bold font-size-12" type="text" placeholder="Barrio">
+                <input class="inputs-district uk-text-bold font-size-12" style="padding-top: 7px;" type="text" placeholder="Barrio">
             </div>
             <div>
                 <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4 uk-margin-remove" style="padding-left: 20px; padding-right: 30px;" uk-grid>

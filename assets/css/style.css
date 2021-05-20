@@ -448,20 +448,11 @@
         margin-bottom: 10px;
     }
     
-    .card-specific-property-administrator {
-        border: 1px solid rgba(255, 0, 0, 0.466);
-        border-left: none;
-        height: 123px;
-        width: 380px;
-        padding: 0px;
-        padding-left: 25px;
-        padding-top: 5px;
-    }
-    
     .ocultar {
         width: 30px;
         margin-right: 10px;
         cursor: pointer;
+        right: 15px;
     }
     
     .ocultar:focus {
@@ -870,6 +861,7 @@
         color: rgba(128, 128, 128, 0.774);
         font-weight: 500;
         padding-left: 15px;
+        padding-bottom: 5px;
     }
     
     .icon-plus-size {
@@ -961,7 +953,7 @@
         width: 295px;
         margin-left: 35px;
         border: none;
-        border-bottom: 1px solid blue;
+        border-bottom: 1px solid rgba(0, 0, 255, 0.637);
     }
     
     .inputs-district:focus {
@@ -1070,4 +1062,26 @@
     
     .line-height-11 {
         line-height: 11px;
+    }
+    
+    .box-opacity {
+        width: 636px;
+        height: 137px;
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.707);
+    }
+    
+    .card-specific-property-administrator {
+        border: 1px solid rgba(255, 0, 0, 0.466);
+        border-left: none;
+        height: 123px;
+        width: 380px;
+        padding: 0px;
+        padding-left: 25px;
+        padding-top: 12px;
+    }
+    
+    .uk-display-none {
+        display: none;
     }
