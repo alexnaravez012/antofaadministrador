@@ -319,7 +319,7 @@
         </div>
     </div>
     <!-- Administración de publicaciones -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- Navbar -->
         <div class="uk-flex uk-flex-middle navbar">
             <div>
@@ -375,7 +375,7 @@
                             <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Antiguedad</h6>
                             <i class="fas fa-plus font-size-12 color-red"></i>
                         </button>
-                        <div uk-drop="mode: click">
+                        <div class="drop-apply-filters uk-card-default" uk-drop="mode: click; offset: 1">
                             <div class="uk-flex uk-flex-middle">
                                 <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
                                 <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">1 a 10 años</h6>
@@ -386,11 +386,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none" uk-toggle="target: #toggle-estrato">
+                    <button class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none">
                         <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Estrato</h6>
                         <i class="fas fa-plus font-size-12 color-red"></i>
-                    </div>
-                    <div id="toggle-estrato" hidden>
+                    </button>
+                    <div class="drop-apply-filters uk-card-default" uk-drop="mode: click; offset: 1">
                         <div class="uk-flex uk-flex-middle">
                             <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
                             <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">Estrato 1</h6>
@@ -418,11 +418,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none" uk-toggle="target: #toggle-megustaria">
+                    <button class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none">
                         <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Me gustaría que tenga</h6>
                         <i class="fas fa-plus font-size-12 color-red"></i>
-                    </div>
-                    <div id="toggle-megustaria" hidden>
+                    </button>
+                    <div class="drop-apply-filters uk-card-default" uk-drop="mode: click; offset: 1">
                         <div class="uk-flex uk-flex-middle">
                             <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
                             <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">Trasporte Publico</h6>
@@ -448,11 +448,11 @@
                             <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">Calentador</h6>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none" uk-toggle="target: #toggle-fecha">
+                    <button class="uk-flex uk-flex-middle uk-flex-between apply-filters-administrator focus-none">
                         <h6 class="uk-margin-remove font-size-10 color-grey-fonts-footer uk-text-bold uk-text-center width-150">Fecha de publicación</h6>
                         <i class="fas fa-plus font-size-12 color-red"></i>
-                    </div>
-                    <div id="toggle-fecha" hidden>
+                    </button>
+                    <div class="drop-apply-filters uk-card-default" style="padding-bottom: 10px;" uk-drop="mode: click; offset: 1">
                         <div class="uk-flex uk-flex-middle">
                             <label><input class="uk-checkbox checkbox-apartment-filter" type="checkbox"> </label>
                             <h6 class="uk-margin-remove font-weight-500 color-grey font-size-10">Últimos 7 días</h6>
@@ -1345,36 +1345,36 @@
                         </div>
                         <div class="uk-card uk-card-default uk-card-body box-bottom-new-image">
                             <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted" style="padding-left: 15px;">Área construida</h6>
-                            <input class="input-build-area" type="text" placeholder="0 m2 - 0 m2">
+                            <input class="input-build-area padding-vertical-2" type="text" placeholder="0 m2 - 0 m2">
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">1</h6>
                         </div>
                         <div class="uk-card uk-card-default uk-card-body box-bottom-new-image-areas uk-flex uk-flex-middle uk-flex-around">
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Área privada:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0 m2">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="0 m2">
                             </div>
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Área Construido:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0 m2">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="0 m2">
                             </div>
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Precio m2:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0/m2">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="0/m2">
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">2</h6>
                         </div>
                         <div class="uk-card uk-card-default uk-card-body box-bottom-new-image-areas uk-flex uk-flex-middle" style="padding-left: 10px;">
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Admin:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="$0">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="$0">
                             </div>
                             <div style="margin-left: 25px;">
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Estrato:</h6>
@@ -1411,7 +1411,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">3</h6>
                         </div>
                         <div class="uk-card uk-card-default uk-card-body box-bottom-new-image-areas uk-flex uk-flex-middle uk-flex-around">
@@ -1433,11 +1433,11 @@
                             </div>
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Piso No:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="12º">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="12º">
                             </div>
                             <div>
                                 <h6 class="uk-margin-remove font-size-8 uk-text-bold uk-text-muted uk-text-center">Sector:</h6>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="Oriente">
+                                <input class="inputs-areas uk-text-center padding-vertical-2" type="text" placeholder="Oriente">
                             </div>
                         </div>
                     </div>
@@ -1457,17 +1457,17 @@
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">1</h6>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">2</h6>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px !important;">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <h6 class="uk-margin-remove font-size-20 uk-text-bold color-red">3</h6>
                         </div>
                     </div>
@@ -1492,23 +1492,23 @@
                         <div class="uk-flex uk-flex-middle">
                             <img class="size-icons-bed" src="./assets/icons/6.png" alt="">
                             <div>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 30px;">
+                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 45px;">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8">Habitaciones</h6>
                             </div>
                         </div>
-                        <div class="hr-tab-vertical"></div>
+                        <div class="hr-tab-vertical-administrator"></div>
                         <div class="uk-flex uk-flex-middle">
                             <img class="size-icons-bath" src="./assets/icons/7.png" alt="">
                             <div>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 30px;">
+                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 45px;">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8">Baños</h6>
                             </div>
                         </div>
-                        <div class="hr-tab-vertical"></div>
+                        <div class="hr-tab-vertical-administrator"></div>
                         <div class="uk-flex uk-flex-middle" style="margin-right: 10px;">
                             <img class="size-icons-parking" src="./assets/icons/8.png" alt="">
                             <div>
-                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 30px;">
+                                <input class="inputs-areas uk-text-center" type="text" placeholder="0" style="width: 45px;">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8">Parqueadero</h6>
                             </div>
                         </div>
@@ -1517,35 +1517,37 @@
             </div>
             <div class="hr-tab-red">
             </div>
-            <div class="uk-flex uk-flex-middle">
-                <div class="height-160" style="margin-left: 35px;">
+            <div class="uk-flex">
+                <div style="margin-left: 35px;">
                     <div class="uk-flex uk-flex-middle cursor-pointer focus-none" uk-toggle="target: #toggle-interior">
-                        <div class="uk-flex uk-flex-bottom width-150">
+                        <div class="uk-flex uk-flex-bottom">
                             <img class="icon-apartment-characteristics" src="./assets/icons/9.png" alt="">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Interior</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
+                        <img class="caret-down-apartment-characteristics" style="margin-top: 6px;" src="./assets/icons/15.png" alt="">
                     </div>
-                    <div class="uk-flex uk-flex-middle" id="toggle-interior" style="margin-top: 20px;" hidden>
-                        <div class="uk-flex uk-flex-middle">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Apto para niños</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle" style="margin-left: 40px;">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Citófonos</h6>
+                    <div class="height-130" id="toggle-interior" hidden>
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 23px;">
+                            <div class="uk-flex uk-flex-middle">
+                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Apto para niños</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-left: 40px;">
+                                <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12">Citófonos</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="height-160" style="margin-left: 80px;">
+                <div style="margin-left: 80px;">
                     <div class="uk-flex uk-flex-middle cursor-pointer focus-none" uk-toggle="target: #toggle-exterior">
-                        <div class="uk-flex uk-flex-bottom width-150">
+                        <div class="uk-flex uk-flex-bottom">
                             <img class="icon-apartment-characteristics" src="./assets/icons/10.png" alt="">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Exteriores</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
+                        <img class="caret-down-apartment-characteristics" style="margin-top: 6px;" src="./assets/icons/15.png" alt="">
                     </div>
-                    <div id="toggle-exterior" style="margin-top: 20PX;" hidden>
+                    <div class="height-130" id="toggle-exterior" style="margin-top: 20PX;" hidden>
                         <div class="uk-flex uk-flex-middle">
                             <div class="uk-flex uk-flex-middle">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
@@ -1578,15 +1580,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="height-160" style="margin-left: 80px;">
-                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none" style="margin-top: 5px;" uk-toggle="target: #toggle-zonas">
-                        <div class="uk-flex uk-flex-bottom width-150">
+                <div style="margin-left: 80px;">
+                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none" style="margin-top: 3px;" uk-toggle="target: #toggle-zonas">
+                        <div class="uk-flex uk-flex-bottom">
                             <img class="icon-apartment-characteristics" src="./assets/icons/11.png" alt="">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Zonas comunes</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
+                        <img class="caret-down-apartment-characteristics" style="margin-top: 4px;" src="./assets/icons/15.png" alt="">
                     </div>
-                    <div id="toggle-zonas" style="margin-top: 20px;" hidden>
+                    <div class="height-130" id="toggle-zonas" style="margin-top: 20px;" hidden>
                         <div class="uk-flex uk-flex-middle">
                             <div class="uk-flex uk-flex-middle">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
@@ -1615,15 +1617,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="height-160" style="margin-left: 80px;">
-                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none" style="margin-top: 5px;" uk-toggle="target: #toggle-sector">
-                        <div class="uk-flex uk-flex-bottom width-150">
+                <div style="margin-left: 80px;">
+                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none" style="margin-top: 3px;" uk-toggle="target: #toggle-sector">
+                        <div class="uk-flex uk-flex-bottom">
                             <img class="icon-apartment-characteristics" src="./assets/icons/12.png" alt="">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey">Sector</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics" src="./assets/icons/15.png" alt="">
+                        <img class="caret-down-apartment-characteristics" style="margin-top: 3px;" src="./assets/icons/15.png" alt="">
                     </div>
-                    <div id="toggle-sector" style="margin-top: 15px; padding-bottom: 10px;" hidden>
+                    <div class="height-130" id="toggle-sector" style="margin-top: 15px; padding-bottom: 10px;" hidden>
                         <div class="uk-flex uk-flex-middle">
                             <div class="uk-flex uk-flex-middle">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics" type="checkbox"> </label>
@@ -1674,7 +1676,7 @@
         </div>
     </div>
     <!-- edición de publicaciones -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!-- Navbar -->
         <div class="uk-flex uk-flex-middle navbar">
             <div>
@@ -1757,7 +1759,7 @@
                         <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <div style="position: relative;">
                                 <img class="images-box-edit-post" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
-                                <button class="button-close-box-edit-post">X</button>
+                                <button class="button-close-box-edit-post"><i class="fas fa-times"></i></button>
                                 <button class="number-box-edit-post">1</button>
                                 <img class="icon-preview-boxedit-post" src="./assets/icons/4.png" alt="">
                             </div>
@@ -1781,7 +1783,7 @@
                         <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <div style="position: relative;">
                                 <img class="images-box-edit-post" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
-                                <button class="button-close-box-edit-post">X</button>
+                                <button class="button-close-box-edit-post"><i class="fas fa-times"></i></button>
                                 <button class="number-box-edit-post">2</button>
                             </div>
                         </div>
@@ -1828,7 +1830,7 @@
                         <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <div style="position: relative;">
                                 <img class="images-box-edit-post" src="./assets/images/MOCKUP Antofa-42.jpg" alt="">
-                                <button class="button-close-box-edit-post">X</button>
+                                <button class="button-close-box-edit-post"><i class="fas fa-times"></i></button>
                                 <button class="number-box-edit-post">3</button>
                                 <img class="icon-next-boxedit-post" src="./assets/icons/5.png" alt="">
                             </div>
@@ -1879,7 +1881,7 @@
                         <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center">
                             <div style="position: relative;">
                                 <img class="images-box-edit-post" src="./assets/images/MOCKUP Antofa-44.jpg" alt="">
-                                <button class="button-close-box-edit-post">X</button>
+                                <button class="button-close-box-edit-post"><i class="fas fa-times"></i></button>
                                 <button class="number-box-edit-post">1</button>
                                 <img class="icon-preview-boxedit-post" src="./assets/icons/4.png" alt="">
                             </div>
@@ -1889,16 +1891,16 @@
                         <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center" ">
                             <div style="position: relative; ">
                                 <img class="images-box-edit-post " src="./assets/images/MOCKUP Antofa-44.jpg " alt=" ">
-                                <button class="button-close-box-edit-post ">X</button>
+                                <button class="button-close-box-edit-post "><i class="fas fa-times "></i></button>
                                 <button class="number-box-edit-post ">2</button>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center " style="padding-top: 15px !important; ">
+                        <div class="uk-card uk-card-default uk-card-body box-add-new-image uk-flex uk-flex-middle uk-flex-center ">
                             <div style="position: relative; ">
                                 <img class="images-box-edit-post " src="./assets/images/MOCKUP Antofa-44.jpg " alt=" ">
-                                <button class="button-close-box-edit-post ">X</button>
+                                <button class="button-close-box-edit-post "><i class="fas fa-times "></i></button>
                                 <button class="number-box-edit-post ">3</button>
                                 <img class="icon-next-boxedit-post " src="./assets/icons/5.png " alt=" ">
                             </div>
@@ -1925,23 +1927,23 @@
                         <div class="uk-flex uk-flex-middle ">
                             <img class="size-icons-bed " src="./assets/icons/6.png " alt=" ">
                             <div>
-                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 30px; ">
+                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 45px; ">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8 ">Habitaciones</h6>
                             </div>
                         </div>
-                        <div class="hr-tab-vertical "></div>
+                        <div class="hr-tab-vertical-administrator "></div>
                         <div class="uk-flex uk-flex-middle ">
                             <img class="size-icons-bath " src="./assets/icons/7.png " alt=" ">
                             <div>
-                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 30px; ">
+                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 45px; ">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8 ">Baños</h6>
                             </div>
                         </div>
-                        <div class="hr-tab-vertical "></div>
+                        <div class="hr-tab-vertical-administrator "></div>
                         <div class="uk-flex uk-flex-middle " style="margin-right: 10px; ">
                             <img class="size-icons-parking " src="./assets/icons/8.png " alt=" ">
                             <div>
-                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 30px; ">
+                                <input class="inputs-areas uk-text-center " type="text " placeholder="0 " style="width: 45px; ">
                                 <h6 class="uk-margin-remove uk-text-muted font-size-8 ">Parqueadero</h6>
                             </div>
                         </div>
@@ -1950,35 +1952,37 @@
             </div>
             <div class="hr-tab-red ">
             </div>
-            <div class="uk-flex uk-flex-middle ">
-                <div class="height-160 " style="margin-left: 35px; ">
+            <div class="uk-flex ">
+                <div style="margin-left: 35px; ">
                     <div class="uk-flex uk-flex-middle cursor-pointer focus-none ">
-                        <div class="uk-flex uk-flex-bottom width-150 ">
+                        <div class="uk-flex uk-flex-bottom ">
                             <img class="icon-apartment-characteristics " src="./assets/icons/9.png " alt=" ">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey ">Interior</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics " src="./assets/icons/15.png " alt=" ">
+                        <img class="caret-down-apartment-characteristics " style="margin-top: 6px; " src="./assets/icons/15.png " alt=" ">
                     </div>
-                    <div class="uk-flex uk-flex-middle " style="margin-top: 20px; ">
-                        <div class="uk-flex uk-flex-middle ">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 ">Apto para niños</h6>
-                        </div>
-                        <div class="uk-flex uk-flex-middle " style="margin-left: 40px; ">
-                            <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
-                            <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 ">Citófonos</h6>
+                    <div class="height-130 ">
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 23px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 ">Apto para niños</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle " style="margin-left: 40px; ">
+                                <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
+                                <h6 class="uk-margin-remove font-weight-500 color-grey font-size-12 ">Citófonos</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="height-160 " style="margin-left: 80px; ">
+                <div style="margin-left: 80px; ">
                     <div class="uk-flex uk-flex-middle cursor-pointer focus-none ">
-                        <div class="uk-flex uk-flex-bottom width-150 ">
+                        <div class="uk-flex uk-flex-bottom ">
                             <img class="icon-apartment-characteristics " src="./assets/icons/10.png " alt=" ">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey ">Exteriores</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics " src="./assets/icons/15.png " alt=" ">
+                        <img class="caret-down-apartment-characteristics " style="margin-top: 6px; " src="./assets/icons/15.png " alt=" ">
                     </div>
-                    <div style="margin-top: 20PX; ">
+                    <div class="height-130 " style="margin-top: 20PX; " >
                         <div class="uk-flex uk-flex-middle ">
                             <div class="uk-flex uk-flex-middle ">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
@@ -2011,15 +2015,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="height-160 " style="margin-left: 80px; ">
-                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none " style="margin-top: 5px; ">
-                        <div class="uk-flex uk-flex-bottom width-150 ">
+                <div style="margin-left: 80px; ">
+                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none " style="margin-top: 3px; ">
+                        <div class="uk-flex uk-flex-bottom ">
                             <img class="icon-apartment-characteristics " src="./assets/icons/11.png " alt=" ">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey ">Zonas comunes</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics " src="./assets/icons/15.png " alt=" ">
+                        <img class="caret-down-apartment-characteristics " style="margin-top: 4px; " src="./assets/icons/15.png " alt=" ">
                     </div>
-                    <div style="margin-top: 20px; ">
+                    <div class="height-130 " style="margin-top: 20px; ">
                         <div class="uk-flex uk-flex-middle ">
                             <div class="uk-flex uk-flex-middle ">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
@@ -2048,15 +2052,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="height-160 " style="margin-left: 80px; ">
-                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none " style="margin-top: 5px; ">
-                        <div class="uk-flex uk-flex-bottom width-150 ">
+                <div style="margin-left: 80px; ">
+                    <div class="uk-flex uk-flex-middle cursor-pointer focus-none " style="margin-top: 3px; ">
+                        <div class="uk-flex uk-flex-bottom ">
                             <img class="icon-apartment-characteristics " src="./assets/icons/12.png " alt=" ">
                             <h6 class="uk-margin-remove font-size-12 uk-text-bold color-grey ">Sector</h6>
                         </div>
-                        <img class="caret-down-apartment-characteristics " src="./assets/icons/15.png " alt=" ">
+                        <img class="caret-down-apartment-characteristics " style="margin-top: 3px; " src="./assets/icons/15.png " alt=" ">
                     </div>
-                    <div style="margin-top: 15px; padding-bottom: 10px; ">
+                    <div class="height-130 " style="margin-top: 15px; padding-bottom: 10px; ">
                         <div class="uk-flex uk-flex-middle ">
                             <div class="uk-flex uk-flex-middle ">
                                 <label><input class="uk-checkbox checkbox-apartment-characteristics " type="checkbox "> </label>
